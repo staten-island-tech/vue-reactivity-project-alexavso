@@ -32,6 +32,9 @@ const products = [
   {
     name: 'Vanilla Jelly',
     price: 7.50,
+  },
+  {
+    name: 'Strawberry Jelly'
   }
 ]
 
