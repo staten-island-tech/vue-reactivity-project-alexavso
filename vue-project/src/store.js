@@ -2,8 +2,12 @@ import { reactive } from 'vue';
 
 export const store = reactive({
     cart: [
-    { id: 1, name: 'Bread', price: 2 },
-    { id: 2, name: 'Croissant', price: 3 },
-    { id: 3, name: 'Muffin', price: 4 }
+    { name: 'Bread', price: 2.50 },
+    { name: 'Croissant', price: 3.50 },
+    { name: 'Muffin', price: 4 },
+    { name: 'Vanilla Cake', price: 55.00 },
+    { name: 'Chocolate Cake', price: 55.00 },
+    { name: 'Red Velvet Cake', price: 55.00},
+    { name: 'Confetti Cake', price: 60.00},
 ]
 })
