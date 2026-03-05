@@ -1,12 +1,13 @@
 <template>
   <div id="nav">
     <h1> Bakery </h1>
+    <RouterView />
   </div>
 
 
 </template>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
