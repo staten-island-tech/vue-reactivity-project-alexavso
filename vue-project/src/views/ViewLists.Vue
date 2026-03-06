@@ -1,12 +1,14 @@
 <template>
-    
+    <div class="container">
+      <PastryCard></PastryCard>
+    </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import ItemCard from '@/components/ItemCard.vue';
+import { ref } from 'vue'
+import PastryCard from '@/components/PastryCard.vue';
 
-const items = ref([
+const pastries = ref([
     { name: 'Bread', price: 2.50 },
     { name: 'Croissant', price: 3.50 },
     { name: 'Muffin', price: 4 },
@@ -45,5 +47,4 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
-
 </style>

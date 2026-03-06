@@ -1,6 +1,7 @@
 <template>
-  <div id="nav">
-    <h1> Bakery </h1>
+  <div>
+    <RouterLink to="/vue-lists"> Bakery </RouterLink>
+
     <RouterView />
   </div>
 
