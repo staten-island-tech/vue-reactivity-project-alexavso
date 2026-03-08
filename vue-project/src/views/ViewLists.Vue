@@ -1,6 +1,10 @@
 <template>
     <div class="container">
-      <PastryCard></PastryCard>
+      <PastryCard
+        v-for="pastry in pastries" 
+        :key="pastry.name" 
+        :item="pastry"
+      />
     </div>
 </template>
 
