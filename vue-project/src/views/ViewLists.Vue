@@ -6,7 +6,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import PastryCard from '@/components/PastryCard.vue';
+import PastryCard from '@/components/PastryCard.vue'
 
 const pastries = ref([
     { name: 'Bread', price: 2.50 },
