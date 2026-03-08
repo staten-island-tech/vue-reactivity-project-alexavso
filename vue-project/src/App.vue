@@ -4,8 +4,6 @@
 
     <RouterView />
   </div>
-
-
 </template>
 
 <style scoped>
@@ -16,10 +14,5 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-}
-
 
 </style>
