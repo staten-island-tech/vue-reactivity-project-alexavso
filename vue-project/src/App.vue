@@ -1,6 +1,6 @@
 <template>
   <div>
-    <RouterLink to="/vue-lists"> Bakery </RouterLink>
+    <RouterLink to="/view-lists"> Bakery </RouterLink>
 
     <RouterView />
   </div>
