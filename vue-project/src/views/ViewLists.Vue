@@ -5,13 +5,25 @@
         v-for="pastry in pastries" 
         :key="pastry.name" 
         :item="pastry"
-      />
+      >
+      <button @click="addToCart(pastry)">Add to Cart</button>
+      </PastryCard>
     </div>
+
+    <ShoppingCart :cart="cart" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
+
+const cart = ref([])
+function addToCart(pastry) {
+  cart.value.push(pastry)
+}
+
+
 import PastryCard from '@/components/PastryCard.vue'
+import ShoppingCart from '@/components/ShoppingCart.vue'
 
 const pastries = ref([
     { name: 'Croissant', 
@@ -30,7 +42,7 @@ const pastries = ref([
       description: 'A rich, creamy dessert made with cream cheese, sugar, and a graham cracker crust.', 
       img: '/images/cheesecake_slice.jpeg'
     },
-    { name: 'Chocolate Mousse Slice',
+    { name: 'Chocolate Slice',
       price: 4.50,
       description: 'A light and airy dessert made with whipped cream, chocolate, and sugar.',
       img: '/images/chocolate_slice.jpeg',
@@ -64,7 +76,14 @@ const pastries = ref([
       price: 3.25,
       description: 'A classic dessert made with chocolate cake and chocolate frosting.',
       img: '/images/choco_cup.jpeg',
+    },
+    {
+      name: 'Oreo Cupcake',
+      price: 3.50,
+      description: 'A delicious dessert made with chocolate cake, Oreo pieces, and Oreo frosting.',
+      img: '/images/oreo_cup.jpeg',
     }
+
     
 ])
 </script>
@@ -88,6 +107,10 @@ const pastries = ref([
   gap: 30px;
   width: 80vw;
   margin: auto;
+}
+
+.button {
+  border-radius: 8px;
 }
 
 </style>

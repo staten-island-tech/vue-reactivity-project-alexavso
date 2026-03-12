@@ -23,8 +23,9 @@ defineProps({
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 300px;
-  width: 200px;
+  height: 350px;
+  width: 100%;
+  box-sizing: border-box;
   border-radius: 12px;
   border: none;
   background: hwb(322 84% 12%);
@@ -45,19 +46,20 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 14px;
   color: lab(100% 0.01 -0.01);
 }
 
 img {
-  width: 70%;
-  height: 130px;
+  width: 100%;
+  height: 140px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 p {
-    font-size: 18;
+    font-size: 15px;
     color: lab(100% 0.01 -0.01);
     text-align: center;
 }
